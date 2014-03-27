@@ -1,6 +1,6 @@
-source 'http://rubygems.org'
+source 'https://rubygems.org'
 
 require 'sinatra'
-require 'artii'
-require 'rspec'
+#require 'artii'
+#require 'rspec'
 
