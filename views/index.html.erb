@@ -1,0 +1,21 @@
+<div class="container">
+
+<a href="/">
+<h1>Hello!</h1>
+</a>
+
+<p>
+This webapp allows you to enter your name, and return a greeting in the ascii font of your choice. Driven by <a href="https://github.com/miketierney/artii">Artii</a> and running on <a href="http://www.sinatrarb.com/">Sinatra</a>. You can see font examples <a href="http://www.figlet.org/examples.html">here</a>. Note that some of these fonts require a relatively large amount of screen space, and so they may not render well on portable devices with small screens.
+</p>
+
+<form action="/output" method="get">
+  <lable for="name">Your Name</lable>
+  <input type="text" maxlength="10" name="name">
+  <lable for="font">Font Type</lable>
+  <select name="font">
+  <%= FontMaker.new.list_fonts %>
+  <select>
+  <input type="submit" value="Submit">
+</form>
+
+</div>

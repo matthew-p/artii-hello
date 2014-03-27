@@ -1,0 +1,13 @@
+<div class="container">
+<h1>Output</h1>
+
+<p>
+<a href="/">Click here</a> to return to the Homepage.
+</p>
+
+<div>
+<pre>
+<%= Artii::Base.new(font: params[:font]).asciify("Hello, #{params[:name][0..9]}!") %>
+</pre>
+</div>
+</div>
