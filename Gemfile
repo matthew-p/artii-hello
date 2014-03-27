@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-require 'sinatra'
-#require 'artii'
-#require 'rspec'
-
+gem 'sinatra'
+gem 'artii'
+gem 'rspec'
+gem 'rack'
