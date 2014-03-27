@@ -1,6 +1,6 @@
-source 'http://rubygems.org'
+source 'https://rubygems.org'
 
 require 'sinatra'
-require 'capybara'
+require 'artii'
 require 'rspec'
-
+require 'rack'
