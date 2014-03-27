@@ -9,5 +9,25 @@ class FontMaker
   end
 end
 
+class RecentUsers
+  attr_accessor :store
+  def initialize
+    @store = YAML::Store.new("users.yml")
+  end
+
+  def add_item(item)
+    @store.transaction do
+      @store.push(item)
+    end
+  end
+
+  def display_all
+    list = @store.transaction.map
+  end
+end
+
+
+
+
 
 
