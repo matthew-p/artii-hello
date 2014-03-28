@@ -5,7 +5,7 @@
 <a href="/">Click here</a> to return to the Homepage.
 </p>
 
-<div>
+<div class="text-out">
 <pre>
 <%= Artii::Base.new(font: params[:font]).asciify("Hello, #{params[:name][0..9]}!") %>
 <% @store.transaction { @store[:users] << params[:name] } %>
