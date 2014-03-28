@@ -1,3 +1,10 @@
 .text-out {
-  min-width:90em;
+  overflow: hidden;
+
+}
+
+pre {
+  word-break: keep-all;
+  word-wrap: normal;
+  white-space: pre;
 }
