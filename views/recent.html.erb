@@ -5,6 +5,6 @@
 <a href='/'>Click here</a> to return to the home page.
 </p>
 <p>
-
+<%= @store.transaction{@store[:users]}.join("<br>") %>
 </p>
 </div>

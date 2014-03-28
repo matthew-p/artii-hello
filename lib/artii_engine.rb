@@ -9,22 +9,17 @@ class FontMaker
   end
 end
 
-class RecentUsers
+=begin
+class Users
   attr_accessor :store
-  def initialize
-    @store = YAML::Store.new("users.yml")
-  end
+  def inititialize
 
-  def add_item(item)
-    @store.transaction do
-      @store.push(item)
-    end
-  end
-
-  def display_all
-    list = @store.transaction.map
   end
 end
+=end
+
+
+
 
 
 

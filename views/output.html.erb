@@ -8,7 +8,7 @@
 <div>
 <pre>
 <%= Artii::Base.new(font: params[:font]).asciify("Hello, #{params[:name][0..9]}!") %>
-
+<% @store.transaction { @store[:users] << params[:name] } %>
 </pre>
 </div>
 </div>
